@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="fabric.js"></script>
+    <title>Minecraft</title>
+  </head>
+  <body class="body_background">
+    <center>
+      <h1 class="btn-primary">Minecraft</h1>
+      <div
+        id="div1"
+        style="
+          background-color: lightcoral;
+          color: white;
+          width: 75%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        <h2>
+          Current Width =
+          <span style="margin-right: 10px" id="cWidth">30</span>
+        </h2>
+        <h2>Current Height = <span id="cHeight">30</span></h2>
+      </div>
+      <canvas width="1000" height="600" id="canvas1"></canvas>
+    </center>
+    <style>
+      canvas {
+        background-color: white;
+        border: 10px ridge grey;
+      }
+      .body_background {
+        background-image: url("https://i.ytimg.com/vi/Dg0IjOzopYU/maxresdefault.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+    <script src="main.js"></script>
+  </body>
+</html>
